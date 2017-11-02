@@ -5,7 +5,7 @@ class CreateSponsoredPosts < ActiveRecord::Migration[5.1]
       t.text :body
       t.integer :price
       t.references :topic
-      t.timestamps
+      t.timestamps true
     end
   end
 end
