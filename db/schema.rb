@@ -58,6 +58,8 @@ ActiveRecord::Schema.define(version: 20171031133345) do
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "topic_id"
+    t.index ["topic_id"], name: "index_sponsored_posts_on_topic_id"
   end
 
   create_table "topics", force: :cascade do |t|
