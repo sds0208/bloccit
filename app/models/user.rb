@@ -12,12 +12,6 @@ class User < ApplicationRecord
     has_secure_password   
     
     def format_name
-        if name
-            name_array = name.split
-            name_array.each do |str| 
-                name_array << str.capitalize
-            end
-            self.name = name_array.join{" "}    
-        end
+        self.name = name.split.map(&:capitalize).join(" ") if name
     end    
 end
