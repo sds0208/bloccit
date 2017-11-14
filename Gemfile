@@ -43,6 +43,7 @@
  
  # Used for encrypting passwords
  gem 'bcrypt'
+ gem 'figaro'
  
  group :development do
    gem 'listen', '~> 3.0.5'
