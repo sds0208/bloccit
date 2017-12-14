@@ -1,14 +1,14 @@
-<div class="row">
-    <div class="col-md-8">
-        <div class="media">
-        <br />
+<div class="container center-block">
+    <div class="center-block">
+        <div class="center-block">
+
             <% avatar_url = @user.avatar_url(128) %>
             <% if avatar_url %>
                 <div class="media-left">
-                    <%= image_tag avatar_url, class: 'media-object' %>
+                    <%= image_tag avatar_url, class: 'center-block' %>
                 </div>
             <% end %>
-            <div class="media-body">
+            <div class="media-left">
                 <h2 class="media-heading"><%= @user.name %></h2>
                 <small>
                     <%= pluralize(@user.posts.count, 'post') %>,
